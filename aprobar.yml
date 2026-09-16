@@ -1,0 +1,48 @@
+name: Aplicar decisión
+
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  aplicar:
+    if: github.event.label.name == 'aprobar' || github.event.label.name == 'rechazar'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Publicar en la bitácora
+        if: github.event.label.name == 'aprobar'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RAMA: ${{ github.event.repository.default_branch }}
+        run: |
+          git config user.name "robot-patria-milagro"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for i in 1 2 3 4 5; do
+            git fetch origin "$RAMA"
+            git reset --hard "origin/$RAMA"
+            node scripts/aprobar.mjs
+            if git diff --quiet; then echo "Sin cambios"; exit 0; fi
+            git add datos/datos.json
+            git commit -m "Publica registro #${{ github.event.issue.number }}"
+            if git push origin "HEAD:$RAMA"; then exit 0; fi
+            sleep $((RANDOM % 6 + 2))
+          done
+          exit 1
+
+      - name: Cerrar pendiente
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/aprobar.mjs --cerrar

@@ -1,0 +1,41 @@
+name: Buscar noticias
+
+on:
+  schedule:
+    - cron: "0 11 * * *"   # Todos los días a las 6:00 a. m. hora de Colombia (11:00 UTC)
+  workflow_dispatch:        # Botón "Run workflow" para correrlo a mano
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  buscar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Buscar y clasificar noticias
+        run: node scripts/buscar.mjs
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CLAUDE_MODEL: ${{ vars.CLAUDE_MODEL }}
+
+      - name: Guardar lista de noticias revisadas
+        run: |
+          git config user.name "robot-patria-milagro"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add datos/vistos.json
+          if git diff --cached --quiet; then echo "Sin cambios"; exit 0; fi
+          git commit -m "Noticias revisadas $(TZ=America/Bogota date +%F)"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            sleep $((RANDOM % 5 + 2))
+          done
+          exit 1
