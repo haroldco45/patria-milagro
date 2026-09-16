@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seguimiento a la Patria Milagro</title>
+<meta name="description" content="Bitácora ciudadana independiente de las cinco misiones del Decreto 1373 de 2026, con fuente en cada registro.">
+<meta property="og:title" content="Seguimiento a la Patria Milagro">
+<meta property="og:description" content="Bitácora ciudadana de las cinco misiones del Gobierno, con fuentes.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧭</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#EEF1EE; --panel:#FFFFFF; --ink:#18242F; --ink-2:#4B5966; --line:#CBD3D0; --soft:#DDE3E0;
+  --focus:#2F5D8A;
+  --m0:#5A6772; --m1:#2F5D8A; --m2:#7A4E9B; --m3:#B07A12; --m4:#2F7D5B; --m5:#A6453A;
+  --ok:#2F7D5B; --warn:#9A6A0B; --bad:#A63A3A; --neutral:#5A6772;
+  --radius-s:4px; --radius-l:10px;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#141A1F; --panel:#1C242B; --ink:#E6ECEA; --ink-2:#A9B6BE; --line:#34414B; --soft:#26313A;
+    --focus:#8DB4DA;
+    --m0:#98A5AF; --m1:#7FA8D3; --m2:#B592D4; --m3:#E0B04E; --m4:#6FC29B; --m5:#E08A7E;
+    --ok:#6FC29B; --warn:#E0B04E; --bad:#EE8A8A; --neutral:#98A5AF;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#141A1F; --panel:#1C242B; --ink:#E6ECEA; --ink-2:#A9B6BE; --line:#34414B; --soft:#26313A;
+  --focus:#8DB4DA;
+  --m0:#98A5AF; --m1:#7FA8D3; --m2:#B592D4; --m3:#E0B04E; --m4:#6FC29B; --m5:#E08A7E;
+  --ok:#6FC29B; --warn:#E0B04E; --bad:#EE8A8A; --neutral:#98A5AF;
+  color-scheme: dark;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Archivo",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:1rem;line-height:1.5;font-variation-settings:"wdth" 100}
+img,svg{max-width:100%}
+a{color:inherit;text-underline-offset:2px}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(1rem,3vw,2rem)}
+
+/* Encabezado */
+.top{padding:clamp(1.5rem,4vw,3rem) 0 1.25rem}
+.top-grid{display:grid;grid-template-columns:1fr auto;gap:1.5rem;align-items:end}
+h1{font-size:clamp(2rem,5.5vw,3.6rem);line-height:1;margin:0;font-weight:800;font-variation-settings:"wdth" 70;letter-spacing:-.01em;max-width:14ch}
+.lede{margin:.9rem 0 0;color:var(--ink-2);max-width:62ch}
+.daycount{text-align:right}
+.daycount b{display:block;font-size:clamp(2.6rem,7vw,4.5rem);line-height:.9;font-weight:700;font-variation-settings:"wdth" 62}
+.daycount span{color:var(--ink-2);font-size:.9rem}
+
+/* Regla del cuatrienio: el elemento protagonista */
+.ruler{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-l);padding:1rem 1.1rem .8rem;margin-bottom:1.5rem}
+.ruler-head{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:space-between;align-items:center;margin-bottom:.4rem}
+.ruler-head h2{margin:0;font-size:1rem;font-weight:600}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}
+.seg button{background:transparent;border:0;padding:.3rem .8rem;cursor:pointer;font-size:.85rem;color:var(--ink-2)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.ruler-scroll{overflow-x:auto}
+.ruler svg{display:block;width:100%;min-width:620px;height:auto}
+.ruler .axis{stroke:var(--line)}
+.ruler .tick{stroke:var(--ink-2)}
+.ruler .ticklabel{fill:var(--ink-2);font-size:12px}
+.ruler .elapsed{fill:var(--soft)}
+.ruler .today{stroke:var(--ink);stroke-width:2}
+.ruler .todaylabel{fill:var(--ink);font-size:12px;font-weight:600}
+.legend{display:flex;flex-wrap:wrap;gap:.4rem 1rem;margin-top:.5rem;font-size:.85rem;color:var(--ink-2)}
+.legend i{display:inline-block;width:.7rem;height:.7rem;border-radius:50%;background:var(--c);margin-right:.35rem;vertical-align:-.05rem}
+
+/* Distribución */
+.layout{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:1.5rem;align-items:start;padding-bottom:3rem}
+@media (max-width:900px){.layout{grid-template-columns:1fr}.top-grid{grid-template-columns:1fr}.daycount{text-align:left}}
+.col-title{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;margin:0 0 .75rem}
+.col-title h2{margin:0;font-size:1.35rem;font-variation-settings:"wdth" 80;font-weight:700}
+
+/* Misiones */
+.missions{display:flex;flex-direction:column;gap:0;border-top:2px solid var(--ink)}
+.mission{border-bottom:1px solid var(--line);padding:1.1rem 0 1.2rem;display:grid;grid-template-columns:3.2rem 1fr;gap:0 1rem}
+.m-num{font-size:3rem;line-height:.85;font-weight:800;font-variation-settings:"wdth" 62;color:var(--m)}
+.mission h3{margin:0;font-size:1.2rem;line-height:1.2;font-weight:700}
+.mission .desc{margin:.25rem 0 .6rem;color:var(--ink-2);max-width:60ch}
+.status-row{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin-bottom:.4rem}
+.pill{display:inline-flex;align-items:center;gap:.35rem;border:1px solid currentColor;border-radius:999px;padding:.05rem .6rem;font-size:.82rem;font-weight:600}
+.pill::before{content:"";width:.45rem;height:.45rem;border-radius:50%;background:currentColor}
+.st-anunciada,.st-anunciado,.st-sin_informacion{color:var(--neutral)}
+.st-en_ejecucion{color:var(--m1)}
+.st-avances,.st-cumplida,.st-cumplido{color:var(--ok)}
+.st-retrasada,.st-retrasado{color:var(--bad)}
+.note{font-size:.9rem;color:var(--ink-2);margin:.2rem 0 .6rem;max-width:60ch}
+.linkbtn{background:none;border:0;padding:0;color:var(--ink-2);text-decoration:underline;text-underline-offset:2px;cursor:pointer;font-size:.85rem}
+.linkbtn:hover{color:var(--ink)}
+.inds{list-style:none;margin:.4rem 0 .5rem;padding:0;display:flex;flex-direction:column;gap:.6rem}
+.ind{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--m);border-radius:var(--radius-s);padding:.6rem .75rem}
+.ind-top{display:flex;justify-content:space-between;gap:.75rem;align-items:baseline}
+.ind-name{font-weight:600;font-size:.95rem}
+.ind dl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.5rem;margin:.45rem 0 .35rem}
+.ind dt{font-size:.75rem;color:var(--ink-2)}
+.ind dd{margin:0;font-weight:700;font-variation-settings:"wdth" 80;font-size:1.05rem;line-height:1.2}
+.ind dd small{display:block;font-weight:400;font-size:.72rem;color:var(--ink-2);font-variation-settings:"wdth" 100}
+.bar{height:6px;background:var(--soft);border-radius:3px;overflow:hidden}
+.bar span{display:block;height:100%;background:var(--m);width:0;transition:width .5s ease}
+.ind-src{font-size:.75rem;color:var(--ink-2);margin-top:.35rem}
+.empty-ind{font-size:.88rem;color:var(--ink-2);margin:.3rem 0}
+.m-foot{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:.3rem}
+
+/* Bitácora */
+.log{position:sticky;top:1rem}
+@media (max-width:900px){.log{position:static}}
+.toolbar{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:.8rem}
+.toolbar select{flex:1 1 9rem;min-width:0}
+select,input,textarea{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-s);padding:.45rem .55rem;width:100%}
+textarea{resize:vertical}
+.btn{background:var(--ink);color:var(--paper);border:0;border-radius:var(--radius-s);padding:.5rem .9rem;font-weight:600;cursor:pointer;white-space:nowrap}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.entries{list-style:none;margin:0;padding:0;max-height:calc(100vh - 12rem);overflow:auto;border-top:2px solid var(--ink)}
+@media (max-width:900px){.entries{max-height:none}}
+.entry{padding:.85rem .2rem .9rem .9rem;border-bottom:1px solid var(--line);position:relative}
+.entry::before{content:"";position:absolute;left:0;top:.95rem;bottom:.95rem;width:3px;background:var(--m);border-radius:2px}
+.entry-meta{display:flex;flex-wrap:wrap;gap:.25rem .75rem;font-size:.8rem;color:var(--ink-2)}
+.entry-meta .mtag{color:var(--m);font-weight:600}
+.entry h4{margin:.2rem 0 .15rem;font-size:1rem;line-height:1.3}
+.entry p{margin:0 0 .45rem;font-size:.92rem;color:var(--ink-2);max-width:62ch}
+.entry-foot{display:flex;flex-wrap:wrap;gap:.4rem .8rem;align-items:center;font-size:.82rem}
+.tipo{color:var(--ink-2)}
+.tipo-analisis{font-style:italic}
+.pubbar{display:flex;flex-wrap:wrap;gap:.3rem .8rem;align-items:center;margin:-.2rem 0 .7rem;font-size:.85rem;color:var(--ink-2);background:var(--soft);border-radius:var(--radius-s);padding:.4rem .6rem}
+.datanote{margin:-.35rem 0 .7rem;font-size:.85rem;color:var(--ink-2)}
+.msg{padding:1rem;border:1px dashed var(--line);border-radius:var(--radius-s);color:var(--ink-2);font-size:.92rem;margin-top:.8rem}
+
+/* Diálogos */
+dialog{border:1px solid var(--line);border-radius:var(--radius-l);background:var(--panel);color:var(--ink);padding:0;width:min(560px,94vw);max-height:92vh}
+dialog::backdrop{background:rgba(10,16,22,.45)}
+.dlg{padding:1.2rem 1.25rem 1.1rem;display:flex;flex-direction:column;gap:.75rem}
+.dlg h2{margin:0;font-size:1.2rem}
+.field{display:flex;flex-direction:column;gap:.25rem}
+.field label{font-size:.85rem;font-weight:600}
+.field .hint{font-size:.78rem;color:var(--ink-2)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}
+@media (max-width:480px){.row2{grid-template-columns:1fr}}
+.assist{background:var(--soft);border-radius:var(--radius-s);padding:.75rem;display:flex;flex-direction:column;gap:.5rem}
+.assist p{margin:0;font-size:.85rem;color:var(--ink-2)}
+.dlg-actions{display:flex;justify-content:flex-end;gap:.5rem;margin-top:.25rem}
+.err{color:var(--bad);font-size:.85rem;min-height:1.1em;margin:0}
+.toast{position:fixed;left:50%;bottom:1.2rem;transform:translateX(-50%);background:var(--ink);color:var(--paper);padding:.55rem 1rem;border-radius:999px;font-size:.9rem;opacity:0;pointer-events:none;transition:opacity .2s}
+.toast.show{opacity:1}
+.foot{border-top:1px solid var(--line);padding:1rem 0 2rem;color:var(--ink-2);font-size:.82rem}
+@media (prefers-reduced-motion:reduce){.bar span,.toast{transition:none}}
+
+.log .col-title{margin-bottom:.35rem}
+</style>
+</head>
+<body>
+<header class="top wrap">
+  <div class="top-grid">
+    <div>
+      <h1>Seguimiento a la Patria Milagro</h1>
+      <p class="lede">Bitácora ciudadana de las cinco misiones que el presidente Abelardo de la Espriella le asignó al vicepresidente José Manuel Restrepo mediante el Decreto 1373 de 2026. Cada registro enlaza a su fuente: anuncios, normas, datos oficiales y análisis críticos.</p>
+    </div>
+    <div class="daycount" aria-live="polite">
+      <b id="dayNum">–</b>
+      <span id="dayText">días de gobierno</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="ruler" aria-labelledby="rulerTitle">
+    <div class="ruler-head">
+      <h2 id="rulerTitle">Registros en el tiempo</h2>
+      <div class="seg" role="group" aria-label="Rango de la línea de tiempo">
+        <button type="button" data-range="cuatrienio" aria-pressed="true">Cuatrienio 2026–2030</button>
+        <button type="button" data-range="90" aria-pressed="false">Últimos 90 días</button>
+      </div>
+    </div>
+    <div class="ruler-scroll"><svg id="rulerSvg" viewBox="0 0 1000 110" role="img" aria-label="Línea de tiempo de registros por misión"></svg></div>
+    <div class="legend" id="legend"></div>
+  </section>
+
+  <main class="layout">
+    <section aria-labelledby="missionsTitle">
+      <div class="col-title"><h2 id="missionsTitle">Las cinco misiones</h2></div>
+      <div class="missions" id="missions"></div>
+    </section>
+
+    <section class="log" aria-labelledby="logTitle">
+      <div class="col-title"><h2 id="logTitle">Bitácora</h2></div>
+      <p class="datanote" id="dataNote">Cargando registros…</p>
+      <div class="toolbar">
+        <select id="fMision" aria-label="Filtrar por misión"></select>
+        <select id="fTipo" aria-label="Filtrar por tipo de registro"></select>
+      </div>
+      <ul class="entries" id="entries"></ul>
+    </section>
+  </main>
+</div>
+
+<footer class="wrap foot">
+  <p>Iniciativa ciudadana independiente, sin afiliación al Gobierno ni a partidos políticos. Un robot revisa noticias a diario y cada registro se publica solo después de revisión humana.</p>
+  <p>Fechas en hora de Colombia (America/Bogota). Esta bitácora no reemplaza las fuentes oficiales: verifique cada dato en el enlace citado.</p>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  const MISIONES = [
+    {n:0, nombre:"General", desc:""},
+    {n:1, nombre:"Colombia sin trabas", desc:"Un Estado más eficiente, ágil y productivo, con menos trámites y normas."},
+    {n:2, nombre:"Talento para el futuro", desc:"Oportunidades para que más de 2 millones de jóvenes que ni estudian ni trabajan puedan hacerlo."},
+    {n:3, nombre:"Energía para crecer", desc:"Más energía y tecnología para que Colombia avance en inteligencia artificial y seguridad energética."},
+    {n:4, nombre:"Más inversión y oportunidades", desc:"Impulsar el crecimiento económico hasta un PIB del 6 %."},
+    {n:5, nombre:"Liberar el capital", desc:"Banco de proyectos que conecte a Colombia con la inversión nacional y extranjera."}
+  ];
+  const TIPOS = {norma:"Decreto o norma", anuncio:"Anuncio", dato:"Dato oficial", analisis:"Análisis o crítica", resultado:"Resultado verificable"};
+  const ESTADOS_HITO = {anunciado:"Anunciado", en_ejecucion:"En ejecución", cumplido:"Cumplido", retrasado:"Retrasado", sin_informacion:"Sin información"};
+  const ESTADOS_MISION = {anunciada:"Anunciada", en_ejecucion:"En ejecución", avances:"Con avances medibles", retrasada:"Retrasada", cumplida:"Cumplida"};
+  const INICIO = "2026-08-07", FIN = "2030-08-07", DAY = 86400000;
+
+  const $ = (id) => document.getElementById(id);
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  const safeUrl = (u) => /^https?:\/\//i.test(String(u||"")) ? String(u) : "";
+  const hoyBogota = () => new Intl.DateTimeFormat("en-CA",{timeZone:"America/Bogota",year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date());
+  const toUTC = (ymd) => { const [y,m,d] = String(ymd).split("-").map(Number); return Date.UTC(y,(m||1)-1,d||1); };
+  const fmtFecha = (ymd) => { if(!ymd) return "Sin fecha"; try{ return new Intl.DateTimeFormat("es-CO",{timeZone:"UTC",day:"numeric",month:"short",year:"numeric"}).format(new Date(toUTC(ymd))); }catch(e){ return ymd; } };
+  const numOrNull = (v) => (v === "" || v === null || v === undefined || isNaN(Number(v))) ? null : Number(v);
+  const fmtNum = (v) => numOrNull(v) === null ? "—" : new Intl.NumberFormat("es-CO",{maximumFractionDigits:2}).format(Number(v));
+  const mColor = (n) => `var(--m${Number(n)||0})`;
+
+  let hitos = [], indicadores = [], valoraciones = {}, rango = "cuatrienio";
+
+  function renderDia(){
+    const hoy = hoyBogota(), total = Math.round((toUTC(FIN)-toUTC(INICIO))/DAY);
+    const n = Math.floor((toUTC(hoy)-toUTC(INICIO))/DAY)+1;
+    $("dayNum").textContent = new Intl.NumberFormat("es-CO").format(Math.max(0,n));
+    $("dayText").textContent = `de ${new Intl.NumberFormat("es-CO").format(total)} días de gobierno. Hoy es ${new Intl.DateTimeFormat("es-CO",{timeZone:"America/Bogota",weekday:"long",day:"numeric",month:"long",year:"numeric"}).format(new Date())}.`;
+  }
+  function fillSelect(sel, entries, all){ sel.innerHTML = `<option value="">${esc(all)}</option>` + entries.map(([v,l]) => `<option value="${esc(v)}">${esc(l)}</option>`).join(""); }
+
+  function renderRuler(){
+    const hoy = hoyBogota();
+    let a, b;
+    if(rango === "cuatrienio"){ a = toUTC(INICIO); b = toUTC(FIN); } else { b = toUTC(hoy)+7*DAY; a = toUTC(hoy)-90*DAY; }
+    const L = 20, R = 980, W = R-L, axisY = 88;
+    const x = (t) => L + Math.max(0, Math.min(1, (t-a)/(b-a))) * W;
+    const tHoy = toUTC(hoy);
+    let out = `<rect class="elapsed" x="${L}" y="8" width="${Math.max(0,x(tHoy)-L)}" height="${axisY-8}" rx="3"></rect>`;
+    for(let i=0;i<=5;i++){ const y=16+i*12; out += `<line x1="${L}" x2="${R}" y1="${y}" y2="${y}" stroke="var(--line)" stroke-dasharray="2 5"></line>`; }
+    out += `<line class="axis" x1="${L}" x2="${R}" y1="${axisY}" y2="${axisY}" stroke-width="1.5"></line>`;
+    const ticks = [];
+    if(rango === "cuatrienio"){ for(let y=2026;y<=2030;y++) ticks.push([Date.UTC(y,7,7), `7 ago ${y}`]); }
+    else { const d0 = new Date(a); let d = new Date(Date.UTC(d0.getUTCFullYear(), d0.getUTCMonth()+1, 1));
+      while(d.getTime() <= b){ ticks.push([d.getTime(), new Intl.DateTimeFormat("es-CO",{timeZone:"UTC",month:"short",year:"numeric"}).format(d)]); d = new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth()+1, 1)); } }
+    ticks.forEach(([t,l]) => { const xx = x(t), anchor = xx < L+30 ? "start" : (xx > R-30 ? "end" : "middle");
+      out += `<line class="tick" x1="${xx}" x2="${xx}" y1="${axisY}" y2="${axisY+5}"></line><text class="ticklabel" x="${xx}" y="${axisY+18}" text-anchor="${anchor}">${esc(l)}</text>`; });
+    hitos.forEach(h => {
+      if(!h.fecha) return;
+      const t = toUTC(h.fecha);
+      if((t < a || t > b) && rango !== "cuatrienio") return;
+      const n = Math.max(0, Math.min(5, Number(h.mision)||0)), hollow = t < a;
+      out += `<circle cx="${x(t)}" cy="${16+n*12}" r="5" fill="${hollow ? "var(--panel)" : mColor(n)}" stroke="${mColor(n)}" stroke-width="2"><title>${esc(fmtFecha(h.fecha))}: ${esc(h.titulo)}${hollow ? " (antes del inicio del gobierno)" : ""}</title></circle>`;
+    });
+    const xh = x(tHoy);
+    out += `<line class="today" x1="${xh}" x2="${xh}" y1="6" y2="${axisY+3}"></line><text class="todaylabel" x="${Math.min(R-4, xh+5)}" y="${axisY-4}" text-anchor="${xh > R-40 ? "end" : "start"}">Hoy</text>`;
+    $("rulerSvg").innerHTML = out;
+  }
+
+  function progreso(i){ const base = numOrNull(i.base), meta = numOrNull(i.meta), act = numOrNull(i.actual) ?? base;
+    if(base === null || meta === null || act === null || meta === base) return null; return Math.max(0, Math.min(1, (act-base)/(meta-base))); }
+
+  function renderMisiones(){
+    $("missions").innerHTML = MISIONES.filter(m => m.n).map(m => {
+      const val = valoraciones["m"+m.n] || {}, est = ESTADOS_MISION[val.estado] ? val.estado : "anunciada";
+      const inds = indicadores.filter(i => Number(i.mision) === m.n);
+      const count = hitos.filter(h => Number(h.mision) === m.n).length;
+      const indHtml = inds.length ? `<ul class="inds">${inds.map(i => {
+        const p = progreso(i), u = i.unidad ? ` ${esc(i.unidad)}` : "", src = safeUrl(i.url);
+        const meta = numOrNull(i.meta) !== null ? `${fmtNum(i.meta)}${u}` : esc(i.metaTexto || "Sin cifra");
+        return `<li class="ind"><div class="ind-top"><span class="ind-name">${esc(i.nombre)}</span></div>
+          <dl><div><dt>Línea base</dt><dd>${fmtNum(i.base)}${numOrNull(i.base)!==null?u:""}<small>${esc(i.baseFecha||"")}</small></dd></div>
+          <div><dt>Último dato</dt><dd>${fmtNum(i.actual)}${numOrNull(i.actual)!==null?u:""}<small>${esc(i.actualFecha||"Pendiente")}</small></dd></div>
+          <div><dt>Meta</dt><dd>${meta}<small>${numOrNull(i.meta)!==null ? esc(i.metaTexto||"") : ""}</small></dd></div></dl>
+          ${p !== null ? `<div class="bar" role="img" aria-label="Avance hacia la meta: ${Math.round(p*100)} %"><span style="width:${(p*100).toFixed(1)}%"></span></div>` : ""}
+          ${i.fuente ? `<div class="ind-src">Fuente: ${src ? `<a href="${esc(src)}" target="_blank" rel="noopener noreferrer">${esc(i.fuente)}</a>` : esc(i.fuente)}</div>` : ""}</li>`; }).join("")}</ul>`
+        : `<p class="empty-ind">Aún no hay un indicador medible para esta misión.</p>`;
+      return `<article class="mission" style="--m:${mColor(m.n)}"><div class="m-num" aria-hidden="true">${m.n}</div><div>
+        <h3>${esc(m.nombre)}</h3><p class="desc">${esc(m.desc)}</p>
+        <div class="status-row"><span class="pill st-${est}">${esc(ESTADOS_MISION[est])}</span></div>
+        ${val.nota ? `<p class="note">${esc(val.nota)}</p>` : ""}${indHtml}
+        <div class="m-foot"><button type="button" class="linkbtn" data-filter="${m.n}">${count === 1 ? "Ver 1 registro" : `Ver ${count} registros`}</button></div>
+      </div></article>`;
+    }).join("");
+  }
+
+  function renderBitacora(){
+    const fm = $("fMision").value, ft = $("fTipo").value;
+    const list = hitos.filter(h => fm === "" || String(Number(h.mision)||0) === fm).filter(h => ft === "" || h.tipo === ft)
+      .sort((x,y) => String(y.fecha||"").localeCompare(String(x.fecha||"")) || String(y.creadoEn||"").localeCompare(String(x.creadoEn||"")));
+    $("entries").innerHTML = list.length ? list.map(h => {
+      const n = Number(h.mision)||0, m = MISIONES[n] || MISIONES[0], src = safeUrl(h.url), est = ESTADOS_HITO[h.estado] ? h.estado : "sin_informacion";
+      return `<li class="entry" style="--m:${mColor(n)}">
+        <div class="entry-meta"><time datetime="${esc(h.fecha)}">${esc(fmtFecha(h.fecha))}</time><span class="mtag">${esc(n ? `Misión ${n}: ${m.nombre}` : "General")}</span></div>
+        <h4>${esc(h.titulo)}</h4>${h.resumen ? `<p>${esc(h.resumen)}</p>` : ""}
+        <div class="entry-foot"><span class="tipo tipo-${esc(h.tipo)}">${esc(TIPOS[h.tipo] || "Registro")}</span><span class="pill st-${est}">${esc(ESTADOS_HITO[est])}</span>
+        ${h.fuente ? (src ? `<a href="${esc(src)}" target="_blank" rel="noopener noreferrer">${esc(h.fuente)}</a>` : `<span>${esc(h.fuente)}</span>`) : ""}</div></li>`;
+    }).join("") : `<li class="msg">Ningún registro coincide con estos filtros.</li>`;
+  }
+
+  document.addEventListener("click", (e) => {
+    const t = e.target.closest("button"); if(!t) return;
+    if(t.dataset.filter !== undefined){ $("fMision").value = t.dataset.filter; renderBitacora();
+      $("logTitle").scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"}); }
+    else if(t.dataset.range){ rango = t.dataset.range; document.querySelectorAll("[data-range]").forEach(b => b.setAttribute("aria-pressed", String(b === t))); renderRuler(); }
+  });
+  $("fMision").addEventListener("change", renderBitacora);
+  $("fTipo").addEventListener("change", renderBitacora);
+
+  fillSelect($("fMision"), MISIONES.map(m => [String(m.n), m.n ? `Misión ${m.n}: ${m.nombre}` : "General"]), "Todas las misiones");
+  fillSelect($("fTipo"), Object.entries(TIPOS), "Todos los tipos");
+  $("legend").innerHTML = MISIONES.map(m => `<span style="--c:${mColor(m.n)}"><i></i>${esc(m.n ? `Misión ${m.n}` : "General")}</span>`).join("");
+  renderDia(); renderRuler(); renderMisiones();
+
+  fetch(`datos/datos.json?t=${Date.now()}`, {cache:"no-store"})
+    .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); })
+    .then(d => {
+      hitos = Array.isArray(d.hitos) ? d.hitos : [];
+      indicadores = (Array.isArray(d.indicadores) ? d.indicadores : []).sort((p,q) => String(p.id).localeCompare(String(q.id)));
+      valoraciones = d.valoraciones || {};
+      $("dataNote").textContent = `${hitos.length} registros. Última actualización: ${fmtFecha(d.actualizado)}.`;
+      renderRuler(); renderMisiones(); renderBitacora();
+    })
+    .catch(() => { $("dataNote").textContent = "No se pudieron cargar los registros. Recargue la página en unos minutos."; });
+
+  setInterval(() => { renderDia(); renderRuler(); }, 60000);
+})();
+</script>
+</body>
+</html>
