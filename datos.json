@@ -1,0 +1,253 @@
+{
+  "actualizado": "2026-09-16",
+  "hitos": [
+    {
+      "creadoEn": "2026-09-16T12:00:01-05:00",
+      "estado": "en_ejecucion",
+      "fecha": "2026-09-09",
+      "fuente": "El Diario",
+      "mision": 0,
+      "resumen": "Restrepo coordinará iniciativas de crecimiento, competitividad, educación, seguridad energética, inversión y transformación del Estado.",
+      "tipo": "norma",
+      "titulo": "Decreto 1373 asigna cinco misiones al vicepresidente",
+      "url": "https://www.eldiario.com.co/noticias/jose-manuel-restrepo-revela-las-cinco-misiones-que-le-encargo-de-la-espriella-para-impulsar-la-economia/",
+      "id": "h01"
+    },
+    {
+      "creadoEn": "2026-09-16T12:00:02-05:00",
+      "estado": "anunciado",
+      "fecha": "2026-09-13",
+      "fuente": "Radio Santa Fe",
+      "mision": 0,
+      "resumen": "Explicó que la agenda requiere coordinación con ministerios, sector privado, academia y organismos internacionales.",
+      "tipo": "anuncio",
+      "titulo": "El vicepresidente presenta públicamente las cinco misiones",
+      "url": "https://www.radiosantafe.com/2026/09/13/vicepresidente-restrepo-abondano-presenta-las-5-misiones-que-le-encomendo-el-presidente-de-la-espriella-para-construir-la-patria-milagro/",
+      "id": "h02"
+    },
+    {
+      "creadoEn": "2026-09-16T12:00:03-05:00",
+      "estado": "anunciado",
+      "fecha": "2026-09-13",
+      "fuente": "Semana",
+      "mision": 1,
+      "resumen": "El vicepresidente propuso reducir trámites y la expedición de normas, que según él llega a unas 20 por día.",
+      "tipo": "anuncio",
+      "titulo": "Diagnóstico oficial: unas 7.000 normas nuevas al año",
+      "url": "https://www.semana.com/politica/articulo/jose-manuel-restrepo-presento-las-5-grandes-misiones-que-le-encomendo-abelardo-de-la-espriella-para-construir-la-patria-milagro/202620/",
+      "id": "h03"
+    },
+    {
+      "creadoEn": "2026-09-16T12:00:04-05:00",
+      "estado": "sin_informacion",
+      "fecha": "2026-09-16",
+      "fuente": "Bloomberg Línea",
+      "mision": 2,
+      "resumen": "El medio describe a este grupo como una de las prioridades declaradas del Gobierno.",
+      "tipo": "dato",
+      "titulo": "Cerca de 2,5 millones de jóvenes ni estudian ni trabajan",
+      "url": "https://www.bloomberglinea.com/latinoamerica/colombia/el-poder-economico-de-los-ninis-de-los-que-habla-de-la-espriella/",
+      "id": "h04"
+    },
+    {
+      "creadoEn": "2026-09-16T12:00:05-05:00",
+      "estado": "anunciado",
+      "fecha": "2026-09-09",
+      "fuente": "Semana",
+      "mision": 3,
+      "resumen": "Esta misión aún no tiene una meta numérica registrada en la bitácora.",
+      "tipo": "norma",
+      "titulo": "El decreto incluye IA y seguridad energética en las funciones del VP",
+      "url": "https://www.semana.com/politica/articulo/jose-manuel-restrepo-presento-las-5-grandes-misiones-que-le-encomendo-abelardo-de-la-espriella-para-construir-la-patria-milagro/202620/",
+      "id": "h05"
+    },
+    {
+      "creadoEn": "2026-09-16T12:00:06-05:00",
+      "estado": "sin_informacion",
+      "fecha": "2026-08-18",
+      "fuente": "DANE, vía El Universal",
+      "mision": 4,
+      "resumen": "El primer semestre acumuló 2,9 % y la formación bruta de capital subió 7,1 %. Corresponde a abril–junio, antes del actual gobierno.",
+      "tipo": "dato",
+      "titulo": "PIB creció 3,5 % en el II trimestre de 2026",
+      "url": "https://www.eluniversal.com.co/economica/2026/08/18/pib-crecio-35-en-el-segundo-trimestre-del-2026-reporta-el-dane/",
+      "id": "h06"
+    },
+    {
+      "creadoEn": "2026-09-16T12:00:07-05:00",
+      "estado": "sin_informacion",
+      "fecha": "2026-08-18",
+      "fuente": "Yahoo Noticias",
+      "mision": 4,
+      "resumen": "Se advirtió que el 3,5 % no debe leerse como el nuevo ritmo permanente de la economía.",
+      "tipo": "analisis",
+      "titulo": "Parte del crecimiento se atribuye a factores transitorios",
+      "url": "https://es-us.noticias.yahoo.com/pib-colombiano-creci%C3%B3-2-9-152000950.html",
+      "id": "h07"
+    },
+    {
+      "creadoEn": "2026-09-16T12:00:08-05:00",
+      "estado": "sin_informacion",
+      "fecha": "2026-05-21",
+      "fuente": "El Colombiano",
+      "mision": 4,
+      "resumen": "Con datos del I trimestre de 2026, el gasto público (15,9 %) superó por primera vez a la tasa de inversión, según Corficolombiana.",
+      "tipo": "dato",
+      "titulo": "Línea base: inversión en 15,7 % del PIB",
+      "url": "https://www.elcolombiano.com/negocios/gasto-publico-supera-inversion-pib-colombia-economia-2026-CP36822550",
+      "id": "h08"
+    },
+    {
+      "creadoEn": "2026-09-16T12:00:09-05:00",
+      "estado": "anunciado",
+      "fecha": "2026-09-13",
+      "fuente": "Pulzo",
+      "mision": 4,
+      "resumen": "Restrepo afirmó que solo la inversión privada permitiría crecer al menos al 6 %.",
+      "tipo": "anuncio",
+      "titulo": "Meta anunciada: duplicar la relación inversión/PIB",
+      "url": "https://www.pulzo.com/nacion/5-misiones-vicepresidente-restrepo-para-impulsar-economia-colombia-PP5300986",
+      "id": "h09"
+    },
+    {
+      "creadoEn": "2026-09-16T12:00:10-05:00",
+      "estado": "anunciado",
+      "fecha": "2026-09-13",
+      "fuente": "Pulzo",
+      "mision": 5,
+      "resumen": "El vicepresidente dijo que están listos para presentarse a inversionistas nacionales y extranjeros.",
+      "tipo": "anuncio",
+      "titulo": "Banco con unos 170 proyectos por más de $600 billones",
+      "url": "https://www.pulzo.com/nacion/5-misiones-vicepresidente-restrepo-para-impulsar-economia-colombia-PP5300986",
+      "id": "h10"
+    },
+    {
+      "creadoEn": "2026-09-16T12:00:11-05:00",
+      "estado": "anunciado",
+      "fecha": "2026-09-13",
+      "fuente": "Colombia.com",
+      "mision": 5,
+      "resumen": "Buscan presentar oportunidades colombianas a inversionistas potenciales. Fechas por confirmar.",
+      "tipo": "anuncio",
+      "titulo": "Se anuncian jornadas internacionales de inversión «Milagro Week»",
+      "url": "https://www.colombia.com/actualidad/noticias/gobierno-de-la-espriella-dio-a-conocer-las-cinco-lineas-estrategicas-para-construir-la-patria-milagro-600444",
+      "id": "h11"
+    },
+    {
+      "creadoEn": "2026-09-16T12:00:12-05:00",
+      "estado": "sin_informacion",
+      "fecha": "2026-09-13",
+      "fuente": "El Diario",
+      "mision": 0,
+      "resumen": "El medio indica que el Gobierno aún debe definir cómo se financiarán los proyectos de la agenda.",
+      "tipo": "analisis",
+      "titulo": "Reto señalado: financiación en medio de restricciones fiscales",
+      "url": "https://www.eldiario.com.co/noticias/jose-manuel-restrepo-revela-las-cinco-misiones-que-le-encargo-de-la-espriella-para-impulsar-la-economia/",
+      "id": "h12"
+    }
+  ],
+  "indicadores": [
+    {
+      "actual": null,
+      "actualFecha": "",
+      "actualizadoEn": "2026-09-16T12:00:00-05:00",
+      "base": 7000,
+      "baseFecha": "Cifra citada por el VP, sep. 2026",
+      "fuente": "Semana",
+      "meta": null,
+      "metaTexto": "Reducir (sin cifra oficial)",
+      "mision": 1,
+      "nombre": "Normas, decretos y resoluciones expedidos al año",
+      "unidad": "normas",
+      "url": "https://www.semana.com/politica/articulo/jose-manuel-restrepo-presento-las-5-grandes-misiones-que-le-encomendo-abelardo-de-la-espriella-para-construir-la-patria-milagro/202620/",
+      "id": "m1-normas"
+    },
+    {
+      "actual": null,
+      "actualFecha": "",
+      "actualizadoEn": "2026-09-16T12:00:00-05:00",
+      "base": 2500000,
+      "baseFecha": "Aprox., sep. 2026",
+      "fuente": "Bloomberg Línea",
+      "meta": null,
+      "metaTexto": "Más de 2 millones con opción de estudio o trabajo",
+      "mision": 2,
+      "nombre": "Jóvenes que ni estudian ni trabajan",
+      "unidad": "jóvenes",
+      "url": "https://www.bloomberglinea.com/latinoamerica/colombia/el-poder-economico-de-los-ninis-de-los-que-habla-de-la-espriella/",
+      "id": "m2-ninis"
+    },
+    {
+      "actual": null,
+      "actualFecha": "",
+      "actualizadoEn": "2026-09-16T12:00:00-05:00",
+      "base": 15.7,
+      "baseFecha": "I trim. 2026",
+      "fuente": "La República",
+      "meta": 31.4,
+      "metaTexto": "Duplicar la relación inversión/PIB",
+      "mision": 4,
+      "nombre": "Inversión (formación bruta de capital fijo) como % del PIB",
+      "unidad": "%",
+      "url": "https://www.larepublica.co/economia/la-inversion-que-necesita-colombia-para-crecer-por-encima-del-6-4458303",
+      "id": "m4-inversion"
+    },
+    {
+      "actual": null,
+      "actualFecha": "",
+      "actualizadoEn": "2026-09-16T12:00:00-05:00",
+      "base": 3.5,
+      "baseFecha": "II trim. 2026 (DANE)",
+      "fuente": "DANE, vía El Universal",
+      "meta": 6,
+      "metaTexto": "Meta del Gobierno",
+      "mision": 4,
+      "nombre": "Crecimiento anual del PIB",
+      "unidad": "%",
+      "url": "https://www.eluniversal.com.co/economica/2026/08/18/pib-crecio-35-en-el-segundo-trimestre-del-2026-reporta-el-dane/",
+      "id": "m4-pib"
+    },
+    {
+      "actual": null,
+      "actualFecha": "",
+      "actualizadoEn": "2026-09-16T12:00:00-05:00",
+      "base": 170,
+      "baseFecha": "Sep. 2026, más de $600 billones",
+      "fuente": "Pulzo",
+      "meta": null,
+      "metaTexto": "Conectarlos con inversión (sin cifra oficial)",
+      "mision": 5,
+      "nombre": "Proyectos listos en el banco de proyectos",
+      "unidad": "proyectos",
+      "url": "https://www.pulzo.com/nacion/5-misiones-vicepresidente-restrepo-para-impulsar-economia-colombia-PP5300986",
+      "id": "m5-proyectos"
+    }
+  ],
+  "valoraciones": {
+    "m1": {
+      "estado": "anunciada",
+      "fecha": "2026-09-16",
+      "nota": "Asignada por el Decreto 1373 (9 sep 2026). Sin resultados medibles todavía."
+    },
+    "m2": {
+      "estado": "anunciada",
+      "fecha": "2026-09-16",
+      "nota": "Asignada por el Decreto 1373 (9 sep 2026). Sin resultados medibles todavía."
+    },
+    "m3": {
+      "estado": "anunciada",
+      "fecha": "2026-09-16",
+      "nota": "Asignada por el Decreto 1373 (9 sep 2026). Falta un indicador con meta numérica."
+    },
+    "m4": {
+      "estado": "anunciada",
+      "fecha": "2026-09-16",
+      "nota": "Asignada por el Decreto 1373 (9 sep 2026). Los datos disponibles son anteriores al inicio del gobierno."
+    },
+    "m5": {
+      "estado": "anunciada",
+      "fecha": "2026-09-16",
+      "nota": "Asignada por el Decreto 1373 (9 sep 2026). Sin inversión cerrada reportada todavía."
+    }
+  }
+}
