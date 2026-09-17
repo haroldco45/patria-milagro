@@ -2,7 +2,7 @@ name: Buscar noticias
 
 on:
   schedule:
-    - cron: "0 11 * * *"   # Todos los días a las 6:00 a. m. hora de Colombia (11:00 UTC)
+     - cron: "17 11 * * *"   # Todos los días a las 6:17 a. m. hora de Colombia (11:17 UTC)
   workflow_dispatch:        # Botón "Run workflow" para correrlo a mano
 
 permissions:
