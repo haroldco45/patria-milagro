@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-17",
+  "actualizado": "2026-09-18",
   "hitos": [
     {
       "creadoEn": "2026-09-16T12:00:01-05:00",
@@ -240,6 +240,18 @@
       "fuente": "El Meridiano",
       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNX2lJaC1lZG12VWNVTjlpRGNoeXdic0tubGJkUFdqQTdXNWVmUHJwb3M1V2o3M01tbXFqeUZtZEg3NWg1NHVzT2JjbUhkYlhNamswVmFlVU12V2FzOUVhNDFxbDlwYnMtanlEanV0ZGk4Vkd3ZXIxXzRVeVRGcG5XX3kxRkE3WllRU2RqTmtIM29ZRmZtd2c4dG5BUlBiaUZBaFVPeUFmV3ExbU8zWF93QzFXMDlIY3FBd3c?oc=5",
       "creadoEn": "2026-09-17T08:45:17-05:00"
+    },
+    {
+      "id": "gh-49",
+      "mision": 3,
+      "fecha": "2026-09-18",
+      "titulo": "Restrepo dice que se ha hablado de importar gas desde Venezuela con EE. UU.",
+      "resumen": "El vicepresidente José Manuel Restrepo mencionó que en la agenda con Estados Unidos se ha discutido la posibilidad de importar gas venezolano.",
+      "tipo": "anuncio",
+      "estado": "sin_informacion",
+      "fuente": "Revista Semana",
+      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQRkFhN1QzTUN0UGx4TlAyTUZhbnlPa09SNVNiNmR0MXlMcG10Y2t5VXg4WTktNDZKd3cxUG9MaVg4SEtFeXlIM2pFZ19HcVg2MTBFTk1OdE04Nkl6ZE9GTk8zcTNmNXVCNjRqaEhQcHpjWDc4QXhpVVFDYTZPdWFTU1lnQjBtZWk2U0l6dFhGZm81NEhQdDFXVTJLU2FHeEtwR3VDZ0ZEUzgtODgzRWN2SlU3STloVjZZNFIzdDQ1UFVqd3ozYzZ4MjBOWngxSGxZT0tfa1V2ejlwbGxyMHNoQzZFeHd3SEVmbjctMVVSTzZqRUZPYldLZVBDcjcwTGVDMWNtN2pKcU_SAY4CQVVfeXFMTVJrZXZ4SVlEYzZmRUFEamZOdkJ3UUhXaGpmeHJPRnBQU3RDaF9PV1FHNnJ5UHVTRnlMYncyUDZOOGRaZ28wOVBvbnhFYnF6UjJqNUo3Z0VVbUljTlpQSlJRTl9WVXJLMVRlV3FuUkpEVXlETDdYMUdlVTEzUUhqUThESUpmYUJLSXAwNVhQMXgyR0NDSXFYdVJOTy0zakptV29lbWI4VjlIWFA0QmwyVHBsamVWOWlORkZsVUpHSlZfT2E1NjV3dk96ZnlWVU5iMXBrSHN2Wlh4RkJyUF9lYVNTYlQtc2pvNTVuelJEcE5tN0dMOU13bG9LUHVKTUdvc1JSanZhZ2o4SDk4MWhn?oc=5",
+      "creadoEn": "2026-09-18T07:01:39-05:00"
     }
   ],
   "indicadores": [
