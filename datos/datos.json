@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-18",
+  "actualizado": "2026-09-21",
   "hitos": [
     {
       "creadoEn": "2026-09-16T12:00:01-05:00",
@@ -264,6 +264,18 @@
       "fuente": "El Nuevo Siglo",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQdnZlYUxJNm1XTW85a1lvQjduVjJyVUhPYXZ2dkFqUmRpZWw0X0RJM2xZQVBIX0dNUGhSYVJUZG1peVVfVHRTQnJjVXE1eU1QTUlwdmxNU2s5eUhFUnduRXlhcmszbmprdTQ1dk9NVmhZTkVxM19uRVk2Z2ExRnd5dVBXTDhQVW1iemtTMXdqblhISUJWaENjTHN1WWQ0ZG1ZZWQ5d3YwMTlPNEJQd21n?oc=5",
       "creadoEn": "2026-09-18T08:52:03-05:00"
+    },
+    {
+      "id": "gh-111",
+      "mision": 0,
+      "fecha": "2026-09-20",
+      "titulo": "Análisis sobre cultura y deporte dentro del programa Patria Milagro",
+      "resumen": "Según el titular de La Silla Vacía, se analiza cómo se abordan la cultura y el deporte dentro del programa Patria Milagro.",
+      "tipo": "analisis",
+      "estado": "sin_informacion",
+      "fuente": "lasillavacia.com",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQdUE2Q1hDTjJGVmpfU01paTdoZ3VfUEVDZUNGR1VKY09HMmdtRGdvYXc5eWZ5R2piaWFyZ3pWZFR0SHJJU1AtMVowWm1yWWUzM2dMbWVHNzJTWUtLTVlLUHRaNm9mUzhpdWJhMG16aFQzM3RpVkVtZFpMUHV5b2tLX0xlbFFHTXE0bXhMYnhNaEJhU2FuTEhzN3RNUlRHejg2VG5GMEc2RjF6T2hCc0lGalhBb3k5TFhOMnRlRkVxTERzc2ZsOFdF?oc=5",
+      "creadoEn": "2026-09-21T05:37:25-05:00"
     }
   ],
   "indicadores": [
