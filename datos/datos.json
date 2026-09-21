@@ -336,6 +336,18 @@
       "fuente": "LaRepublica.co",
       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOTk9XcnVGUERJQTB3MDROd0stdWZ6elo0S25fVGkxRnZrWEd6WC1vNnZmdVdldVpJbmUyTVhMQkxYb1pMdk1rQnhmWGxCMVlzRV9EOGx4VDRITkt5VWZZSGRzWEFrNWFaVUF3bGhnMk1lOXRwMXpHdk9YSU1uaUlkWFNSckc1cjhnYk1WSV9qN0FXS1Z0RGlObzB2SXJOTlI2SFoxOGtRSzdnSjJHYV9GM3BPNld0Mmtqc3dGVQ?oc=5",
       "creadoEn": "2026-09-21T09:39:58-05:00"
+    },
+    {
+      "id": "gh-122",
+      "mision": 4,
+      "fecha": "2026-09-18",
+      "titulo": "DANE reporta crecimiento económico de 1,11% en julio, el más bajo del año",
+      "resumen": "El DANE midió un crecimiento de la economía de 1,11% en julio, la cifra más baja desde enero según sectores como campesinos y mineros.",
+      "tipo": "dato",
+      "estado": "sin_informacion",
+      "fuente": "mascolombia.com",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOOGkwRUNEMFZJMlFtT1JTYXpwX0xvZXMyV0I5TVV0Yk43VWhNd2tOclVFdXEyTDNMYVg1WHBlblZMWXhfVk5kUjJNMW9mbGJHOUtPT2JDa3NMMVd4S1AyR0stSzBYSnY4TFYzLTJtUkhTdHZlc1ZrdWJ2djFVaTBsTW5NVlNhcV9kcGJxaHZsOWkzWHpnVW1qeFRPM0tsVHlvcEpZemFvWmlxTW1xNHpXLVk2T0JFNlFFZWRzdVNnRjbSAcABQVVfeXFMTjhpMEVDRDBWSTJRbU9SU2F6cF9Mb2VzMldCOU1VdGJON1VoTXdrTnJVRXVxMkwzTGFYNVhwZW5WTFl4X1ZOZFIyTTFvZmxiRzlLT09iQ2tzTDFXeEtQMkdLLUswWEp2OExWMy0ybVJIU3R2ZXNWa3VidnYxVWkwbE1uTVZTYXFfZHBicWh2bDlpM1h6Z1VtanhUTzNLbFR5b3BKWXphb1ppcU1tcTR6Vy1ZNk9CRTZRRWVkc3VTZ0Y2?oc=5",
+      "creadoEn": "2026-09-21T09:40:13-05:00"
     }
   ],
   "indicadores": [
@@ -385,18 +397,18 @@
       "id": "m4-inversion"
     },
     {
-      "actual": null,
-      "actualFecha": "",
-      "actualizadoEn": "2026-09-16T12:00:00-05:00",
+      "actual": 1.11,
+      "actualFecha": "julio 2026",
+      "actualizadoEn": "2026-09-21T09:40:13-05:00",
       "base": 3.5,
       "baseFecha": "II trim. 2026 (DANE)",
-      "fuente": "DANE, vía El Universal",
+      "fuente": "mascolombia.com",
       "meta": 6,
       "metaTexto": "Meta del Gobierno",
       "mision": 4,
       "nombre": "Crecimiento anual del PIB",
       "unidad": "%",
-      "url": "https://www.eluniversal.com.co/economica/2026/08/18/pib-crecio-35-en-el-segundo-trimestre-del-2026-reporta-el-dane/",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOOGkwRUNEMFZJMlFtT1JTYXpwX0xvZXMyV0I5TVV0Yk43VWhNd2tOclVFdXEyTDNMYVg1WHBlblZMWXhfVk5kUjJNMW9mbGJHOUtPT2JDa3NMMVd4S1AyR0stSzBYSnY4TFYzLTJtUkhTdHZlc1ZrdWJ2djFVaTBsTW5NVlNhcV9kcGJxaHZsOWkzWHpnVW1qeFRPM0tsVHlvcEpZemFvWmlxTW1xNHpXLVk2T0JFNlFFZWRzdVNnRjbSAcABQVVfeXFMTjhpMEVDRDBWSTJRbU9SU2F6cF9Mb2VzMldCOU1VdGJON1VoTXdrTnJVRXVxMkwzTGFYNVhwZW5WTFl4X1ZOZFIyTTFvZmxiRzlLT09iQ2tzTDFXeEtQMkdLLUswWEp2OExWMy0ybVJIU3R2ZXNWa3VidnYxVWkwbE1uTVZTYXFfZHBicWh2bDlpM1h6Z1VtanhUTzNLbFR5b3BKWXphb1ppcU1tcTR6Vy1ZNk9CRTZRRWVkc3VTZ0Y2?oc=5",
       "id": "m4-pib"
     },
     {
