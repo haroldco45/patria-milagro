@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-21",
+  "actualizado": "2026-09-22",
   "hitos": [
     {
       "creadoEn": "2026-09-16T12:00:01-05:00",
@@ -384,6 +384,18 @@
       "fuente": "La Silla Vacía",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNVDBtSzdYMHdXLXRaLUw2ckVoRTlqX1llZE0xOUhEbDA4T0hRZVZNZ1RWYndKYjRrdHkyTEJqZWRzbG0tOWpTN1Blc24zWWJXbWlsV21KVGNWYk11VGx4cXp0b0oxenFYRkhGUGFSSG5SZ2hlOVg5bnNhVFJMUEVBdDRCSzY1ZDhvdFRISzI5allMdWZ3MzdOZkNfaVlJM2l5dVFPeG9rR2ROazdpREMwTFh0UQ?oc=5",
       "creadoEn": "2026-09-21T09:40:56-05:00"
+    },
+    {
+      "id": "gh-139",
+      "mision": 0,
+      "fecha": "2026-09-21",
+      "titulo": "Restrepo presenta en la ONU plan para transformar el Estado y atraer inversión",
+      "resumen": "Según Pulzo, el vicepresidente José Manuel Restrepo presentó en la ONU el plan del Gobierno para modernizar el Estado y atraer inversión a Colombia.",
+      "tipo": "anuncio",
+      "estado": "anunciado",
+      "fuente": "Pulzo",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOQmNweXRHaFBBXzc3c2RkQUd3MHZrV3g5ejQzaGVCZXRHWU9jTGhQeUFFdlQwMk5IUzRTWG05RkU2LVlsSWF4Y3Utay0zdzYzc29tMjB4dF9yaThRX181ZTZ1NWw5aGdHdEQ3OWhrQmRTNHNsRUVrdlI4U0loSmRBSGMyQ2JTVlo2ZUlONGh4VG1EanF1azZ5MkhaQ1hDaEhrM21YMDVmZEhsNG9JbGUwelhDY2tmTVNUelBhOFdQQTRET3M4MGd4WURxMGU5cGJOQXc?oc=5",
+      "creadoEn": "2026-09-22T12:01:01-05:00"
     }
   ],
   "indicadores": [
