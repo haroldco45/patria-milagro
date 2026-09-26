@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-25",
+  "actualizado": "2026-09-26",
   "hitos": [
     {
       "creadoEn": "2026-09-16T12:00:01-05:00",
@@ -516,6 +516,18 @@
       "fuente": "Pulzo",
       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNTDA5NURZV3IzTlRSeE1UMFRvWEZtc2FTZThfU2ViMDRpTHg2Zk1MT0xUa01zUDRoV0RkU28wRzJ5akdXU200VUVDQU5yRE85X3lHNUxjTFNRSnFRR3p1cE5fQVpXSnFkeVdTMlk0VHFkNHZXYUM2bjVyYWp5WGZZVWo5a0dKamlkUVNYejNvTVVObnZlSFM1ZF9YVnlCTUd0S1diUVNjQnFWXzZYR3NuRnNvMk5KdTU1ZGtDVTdfbDRlREVG?oc=5",
       "creadoEn": "2026-09-25T18:12:24-05:00"
+    },
+    {
+      "id": "gh-168",
+      "mision": 3,
+      "fecha": "2026-09-21",
+      "titulo": "Ineficiencias energéticas le cuestan a Colombia hasta USD 11.000 millones al año",
+      "resumen": "Un análisis señala que las ineficiencias en el sector energético representan pérdidas de hasta USD 11.000 millones anuales para Colombia.",
+      "tipo": "analisis",
+      "estado": "sin_informacion",
+      "fuente": "La Gran Noticia",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxONG5Fem5Xb0ZBekp2OGM4cHV0djBSazR2TWZkUUlxaHo5SjEyZXFCa2U4ZmZZbXZlNUl5aEo1dVA1Sm5nQnU4cURfZnhadzVGR1RBSzdRSk5JbnB0dVNsSVhQWERPS1hYYUhWM25qejd4Rl9NZ1d2aE80eEVpZWp1X3pxS1RzQy1oM0hyS3JVRDVXMlNodllMNHhIM0RXb1NBOFhKdTFtMHU0ZnVFbDZWUGlhaEJILXNZZm1zaVBn?oc=5",
+      "creadoEn": "2026-09-26T07:12:45-05:00"
     }
   ],
   "indicadores": [
