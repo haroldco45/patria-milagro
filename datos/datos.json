@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-26",
+  "actualizado": "2026-09-29",
   "hitos": [
     {
       "creadoEn": "2026-09-16T12:00:01-05:00",
@@ -528,6 +528,18 @@
       "fuente": "La Gran Noticia",
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxONG5Fem5Xb0ZBekp2OGM4cHV0djBSazR2TWZkUUlxaHo5SjEyZXFCa2U4ZmZZbXZlNUl5aEo1dVA1Sm5nQnU4cURfZnhadzVGR1RBSzdRSk5JbnB0dVNsSVhQWERPS1hYYUhWM25qejd4Rl9NZ1d2aE80eEVpZWp1X3pxS1RzQy1oM0hyS3JVRDVXMlNodllMNHhIM0RXb1NBOFhKdTFtMHU0ZnVFbDZWUGlhaEJILXNZZm1zaVBn?oc=5",
       "creadoEn": "2026-09-26T07:12:45-05:00"
+    },
+    {
+      "id": "gh-231",
+      "mision": 4,
+      "fecha": "2026-09-29",
+      "titulo": "BID respalda 'Misión Crecer', programa liderado por José Manuel Restrepo",
+      "resumen": "Según Semana, el BID dio su respaldo a la iniciativa 'Misión Crecer' que lidera el vicepresidente Restrepo, orientada al crecimiento económico.",
+      "tipo": "analisis",
+      "estado": "sin_informacion",
+      "fuente": "Revista Semana",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQUk5vQWxqeTdIVUNJN2x3Tl8yeTk5UmpQZFBFRmNNZVh0bk9ySDBycDJmQmROX2lLQzJtMmZ2ak5XVnhDTExPMkhSMU01c1ZuZVRWVDVZUVBWTWstY1hlS0dTUk12aHAxODhEWU9SVHRWemk5VFZuU2VEdmxidVNmUlQ2NnZ4anBWRUU2ZERZNzJxdV9RQ1BmZERWNTNYQjNHTUZuNEpTZnJaTHJJTXN5TFUwYWdILXpMbnN4TVJNTGgybWlsTVlvcHh5YTJXTHA1bnfSAdIBQVVfeXFMUFJOb0Fsank3SFVDSTdsd05fMnk5OVJqUGRQRUZjTWVYdG5PckgwcnAyZkJkTl9pS0MybTJmdmpOV1Z4Q0xMTzJIUjFNNXNWbmVUVlQ1WVFQVk1rLWNYZUtHU1JNdmhwMTg4RFlPUlR0VnppOVRWblNlRHZsYnVTZlJUNjZ2eGpwVkVFNmREWTcycXVfUUNQZmREVjUzWEIzR01GbjRKU2ZyWkxySU1zeUxVMGFnSC16TG5zeE1STUxoMm1pbE1Zb3B4eWEyV0xwNW53?oc=5",
+      "creadoEn": "2026-09-29T21:20:53-05:00"
     }
   ],
   "indicadores": [
