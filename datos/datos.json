@@ -588,22 +588,34 @@
       "fuente": "El Tiempo",
       "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxPQW5mM3BvcXZsVGRXekF5ZndjYkNjWVBCTkpxNTdtTmNnV2pCWWtnaC1NeV9taWFfMEUxNENiUEJGYmZ6SzEzZ05nMUJQU1lySm1mUExXTFBtWmZtWi1YemdjLVpQbWllR0c3NWN3TUVKRkJNVng5b0pTYnZLSVRqd1htV1Y2U2s4cW1zekl0WWJYNDhFcFN6dGdRN0NSRXl0VTJ4dHJZSmxSWkxWQVVTTjdmekRpUVNKRVFCdGhOcGtZem5wZHl3RDRsdENBbHF1dGJYcG10WlIxTGZyejI0YlZOcEpXeTdvcGVKU18zN0phVFBSOHVjMzlSV0NMdmxEcWRNa010T1c2cERvVV8xejNxRVVLdEZwcGhuStIBogJBVV95cUxPWFJ3MGM4VldzQjJNTWs5eTlXaloyNFNxcnBSZm1tcjVMOUduSlJMRGJaUHpjSHFYOFBmVmNCOXpLbUJ1MXZ5MFpSS3ZFdFZTTnotY3c2ZTRJVHVscVlHcnpaaHh3QlVrZmx1cTVqdVZvTldORWRLcnVsMGtZRmZXdFJpSkdpZG1ObXF2dGNESUROOEEzN0ZnWlBpV0VBR3ZkZ29Ib3pqLXpXRzFHOGZ3S3l0TFdxQXFNOHlKbkdBVkhSMGxmNGpoNTBfTTZwbzlHTGxtckkyMFU5V241dFd3VFlFSHQxWEhpRWZtak5zNV81eXBOMlByUkxtbTZsREI2UlFwNTdjNEo0bVJTNFlCQkYyMWJwRmw2d2xVdEx3ck1yQQ?oc=5",
       "creadoEn": "2026-09-30T11:17:16-05:00"
+    },
+    {
+      "id": "gh-244",
+      "mision": 1,
+      "fecha": "2026-09-28",
+      "titulo": "De la Espriella emitió 210 decretos bajo el programa “patria milagro”",
+      "resumen": "Según El Espectador, el presidente ha emitido 210 decretos en el marco de su programa, mientras el Congreso reclama mayor claridad en la agenda.",
+      "tipo": "dato",
+      "estado": "sin_informacion",
+      "fuente": "El Espectador",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOQVNJR1RZSTZaazRJUlR0bmd2cVlzYW9MRFRlRjBIeWE2ekNWNnlGXzdTNVhKalFjRGdaODBWZVp4MVoxM0s4WXVqRWN0R1h6NFVmNDNzWTB4bHZydThzMG5IbERSRmVkZGlaMEJ4ZFFCMFZqQktiV3JzalJNc2tfUU5NVDZBUmlYRDVNcktXQUhXbUtiWVFzYnFrYnBmaUVYaWNwTl9yZnhmU2ZuTjZ3bUhTWjJLay1hZ2d2MmM2NmVCbHF5RElGdzlTVUtCcnVaM2hDYWlnYXNsdm05NjFkRGNMLTJZR1BiZ0RJ0gH_AUFVX3lxTE5OME1Ic2QxdFZ3WWpISmk3c2UtMGRjaGhZekFuQ2sxVHAwOWttdkxRZFIwdkxhQW1YV0RfemlFa0FMa3VCTms0R08yZHc5aGZiOWVsdV9iVjhRVE5BRl9YSTJZLVF2SHJsMXJ4TW55WXpYRm8weVRqZ0tWa3VxR0xSX1BxMWJzeFA5UXp6TDBsUmZqUG9FeEtobUxSWVhLcW1CczMwdDh2STZueUhHQmNLT1pfVmVsM3dKSEc0S0x6Z0NqN054SEVJanFMQU5XWmFOYzEyTWFCdGdxYmJaQ3RHQzYzbUx5OGpBUVVzWVBIRk55SC1yX3drQjZmR0xjdw?oc=5",
+      "creadoEn": "2026-09-30T11:17:31-05:00"
     }
   ],
   "indicadores": [
     {
-      "actual": null,
-      "actualFecha": "",
-      "actualizadoEn": "2026-09-16T12:00:00-05:00",
+      "actual": 210,
+      "actualFecha": "ene-sept 2026",
+      "actualizadoEn": "2026-09-30T11:17:31-05:00",
       "base": 7000,
       "baseFecha": "Cifra citada por el VP, sep. 2026",
-      "fuente": "Semana",
+      "fuente": "El Espectador",
       "meta": null,
       "metaTexto": "Reducir (sin cifra oficial)",
       "mision": 1,
       "nombre": "Normas, decretos y resoluciones expedidos al año",
       "unidad": "normas",
-      "url": "https://www.semana.com/politica/articulo/jose-manuel-restrepo-presento-las-5-grandes-misiones-que-le-encomendo-abelardo-de-la-espriella-para-construir-la-patria-milagro/202620/",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOQVNJR1RZSTZaazRJUlR0bmd2cVlzYW9MRFRlRjBIeWE2ekNWNnlGXzdTNVhKalFjRGdaODBWZVp4MVoxM0s4WXVqRWN0R1h6NFVmNDNzWTB4bHZydThzMG5IbERSRmVkZGlaMEJ4ZFFCMFZqQktiV3JzalJNc2tfUU5NVDZBUmlYRDVNcktXQUhXbUtiWVFzYnFrYnBmaUVYaWNwTl9yZnhmU2ZuTjZ3bUhTWjJLay1hZ2d2MmM2NmVCbHF5RElGdzlTVUtCcnVaM2hDYWlnYXNsdm05NjFkRGNMLTJZR1BiZ0RJ0gH_AUFVX3lxTE5OME1Ic2QxdFZ3WWpISmk3c2UtMGRjaGhZekFuQ2sxVHAwOWttdkxRZFIwdkxhQW1YV0RfemlFa0FMa3VCTms0R08yZHc5aGZiOWVsdV9iVjhRVE5BRl9YSTJZLVF2SHJsMXJ4TW55WXpYRm8weVRqZ0tWa3VxR0xSX1BxMWJzeFA5UXp6TDBsUmZqUG9FeEtobUxSWVhLcW1CczMwdDh2STZueUhHQmNLT1pfVmVsM3dKSEc0S0x6Z0NqN054SEVJanFMQU5XWmFOYzEyTWFCdGdxYmJaQ3RHQzYzbUx5OGpBUVVzWVBIRk55SC1yX3drQjZmR0xjdw?oc=5",
       "id": "m1-normas"
     },
     {
