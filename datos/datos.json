@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-02",
+  "actualizado": "2026-10-06",
   "hitos": [
     {
       "creadoEn": "2026-09-16T12:00:01-05:00",
@@ -672,6 +672,18 @@
       "fuente": "calihoy.com",
       "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPMms1Q2xPdkZ4YXBkSVYzVVl6TXh2bEw4NVhzLVVDZVBkS256OHZYQTUta0YzNmlOeDVzbXRvbFFIMTEyb3NlSW1xb2lqbDgtZjlUTVV5a3htbE1fOUNUelRjY3lBQmNINTNta2EzUmJ1U2hHd1hDb29vME1pNnlpWDZWbWJpZVhBakJ3TzRMOWNVZnk5MVdWVGpmU1lDWXoya1dzTGFyMHlTOXFxNGlaMHh2ZERuTEpH?oc=5",
       "creadoEn": "2026-10-02T14:07:25-05:00"
+    },
+    {
+      "id": "gh-305",
+      "mision": 4,
+      "fecha": "2026-10-05",
+      "titulo": "Análisis señala que hay recursos pero falta confianza para invertir",
+      "resumen": "Según el titular, existe disponibilidad de capital pero la confianza empresarial no es suficiente para dinamizar la inversión.",
+      "tipo": "analisis",
+      "estado": "sin_informacion",
+      "fuente": "Yo Influyo",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOMGxCeU9reVN5N3BHZWtmMkVYSERPUjJXLUc5S3Y2U0gxREZ1UkdjeExhSXVMQ190S2txSzFlVEl3SzM2ZVNEQXlfZ0dtYVFERjg4cUNoUm5uQlpjWWR1YnF6ZlJYUHotdzNRWDFSbDdMR254U2NJckxYcU9nYXh2a0xaZjhpOW5wbVlKclBnSnZKUFVLQkE?oc=5",
+      "creadoEn": "2026-10-06T06:42:27-05:00"
     }
   ],
   "indicadores": [
