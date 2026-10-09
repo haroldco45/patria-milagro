@@ -708,6 +708,18 @@
       "fuente": "IFM Noticias",
       "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNaWctbmRRd1ppUktQZU0tUElrNUxIQ2VQZ0oySGlQTkpEQmtxSHhMYTRKWnJzOWhrSjF3RWNtaUpfODdKLVg0VnNpamxRdVRvUm9ISmVHcE5SSmdWOUR3VHFrZHBlQVB0d1lqT3FuV2lPVEpRR3ZySHVxcHpVUVNPVk9hMDVZS2EzVzJkV1FB?oc=5",
       "creadoEn": "2026-10-09T08:27:28-05:00"
+    },
+    {
+      "id": "gh-322",
+      "mision": 4,
+      "fecha": "2026-10-07",
+      "titulo": "Gobierno ajusta al alza proyección del PIB minero para 2027",
+      "resumen": "Un informe de Finanzas Públicas señala que el Gobierno revisó al alza su proyección de crecimiento del PIB minero para 2027.",
+      "tipo": "dato",
+      "estado": "sin_informacion",
+      "fuente": "Editorial RN",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQNGxHWHJNZ2VlbnpIejN2cGlBZWpvSjBubHlfOHlyYlN0cm81Z0lYRFlkSHp3Q2Z6d3lxMWVtT2FmVXg2TWNFaF91Tl9PYUxuUjg0dlRMNC15bWtlakdkMHR5VldkeXJlQWhvMi1RQVd3WHhmX0V0dFcySnRQakFKam94dnVMRUFfLThTalFlNjJkN3VSWHJVWlR4d1gzMnQtejdPamxGNA?oc=5",
+      "creadoEn": "2026-10-09T08:27:53-05:00"
     }
   ],
   "indicadores": [
